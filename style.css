@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: rgb(34,86,195);
+background: linear-gradient(0deg, rgba(34,86,195,1) 0%, rgba(253,45,227,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    width: 100%;
+    height: 8%;
+    padding-top: 5px;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 35px;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 50px;
+}
+
+.logo span {
+    color: #1e05ff;
+    font-size: 50px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    margin: -30px 90px; 
+    list-style-type: none;   
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    float: right;
+}
+
+.nav ul li {
+    padding: 0 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.4s ease-in-out;
+}
+
+.nav ul li a:hover {
+    color: #000;
+}
+
+.content {
+    padding-top: 140px;
+}
+
+.content .main-text {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+.content .main-text h1 {
+    font-size: 100px;
+    line-height: 1;
+    color: #ffffff;
+    margin: 0 0 45px;
+    font-family: 'Nosifer', sans-serif;
+}
+
+.content .main-text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: -20px 0 0 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content .main-text p {
+    max-width: 100%;
+    width: 480px;
+    color: #ffffff;
+    line-height: 1.2;
+    font-size: 12px;
+    margin: 10px 0 50px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content .main-text a {
+    font-family: 'Arial Black';
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    border: 1px solid #fff;
+    padding: 9px 25px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 800;
+    margin: -10px 0 0 20px;
+}
+
+.content .main-text a:hover {
+    border: 1px solid #f5dca8;
+    background: transparent;
+    color: #ffffff;
+    transition: .4s;
+}
+
+.content .main-text a i {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+}
+
+.image img {
+    height: 100%;
+    filter: drop-shadow(5px 5px 5px #9c06e2);
+}
+
+.container {
+    width: 100%;
+    height: 90vh;
+    margin-top: 1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(120,34,195);
+    background: linear-gradient(0deg, rgba(120,34,195,1) 0%, rgba(253,45,227,1) 100%);
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Nosifer', sans-serif;
+    padding-top: 20px;
+}
+
+.container p {
+    max-width: 100%;
+    width: 700px;
+    float: right;
+    margin: 8% 80px;
+    text-align: justify;
+}
+
+.container img {
+    width: 30%;
+    height: 70%;
+    margin: 40px 0 0 50px;
+    object-fit: cover;
+    border-radius: 10%;
+    box-shadow: 5px 10px 15px #fff;
+}
+
+#skills {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(120,34,195);
+    background: linear-gradient(0deg, rgba(120,34,195,1) 0%, rgba(244,45,253,1) 100%);
+}
+
+.container2 {
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.container2 .card {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #ffffff8c; 
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.container2 .card:hover {
+    height: 400px;
+}
+
+.container2 .card .img-skl {
+    position: absolute;
+    top: 20px;
+    width: 200px;
+    height: 200px;
+    background: #333;
+    border-radius: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container2 .card:hover .img-skl {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container2 .card .img-skl img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container2 .card .content-skl {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container2 .card:hover .content-skl {
+    top: 130px;
+    height: 250px;
+}
+
+.container2 .card .content-skl h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(120,34,195);
+}
+
+.container2 .card .content-skl p {
+    color: #333;
+    margin: 10px 0 0 30px;
+    text-align: justify;
+    width: 80%;
+}
+
+.container2 .card .content-skl a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: rgb(120,34,195);
+    background: linear-gradient(0deg, rgba(120,34,195,1) 0%, rgba(244,45,253,1) 100%);
+    color: #fff;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 8px;
+}
